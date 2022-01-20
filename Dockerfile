@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.15
+FROM ghcr.io/alfinternet/baseimage-alpine:3.15
 
 # install packages
 RUN \
@@ -41,5 +41,5 @@ RUN \
 COPY root/ /
 
 # ports and volumes
-EXPOSE 80 443
+EXPOSE 80 443 22
 VOLUME /config
