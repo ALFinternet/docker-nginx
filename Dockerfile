@@ -21,7 +21,11 @@ RUN \
     php8-simplexml \
     php8-xml \
     php8-xmlwriter \
-    php8-zlib && \
+    php8-zlib \
+    # Finch
+    openssh \
+    # End
+    && \
   echo "**** configure nginx ****" && \
   echo 'fastcgi_param  HTTP_PROXY         ""; # https://httpoxy.org/' >> \
     /etc/nginx/fastcgi_params && \
